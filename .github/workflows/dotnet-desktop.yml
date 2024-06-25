@@ -23,8 +23,7 @@ jobs:
     steps: 
     - name: Checkout 
       uses: actions/checkout@v2 # At the time of writing, v4 is the latest 
-      with: 
-        fetch-depth: 0 
+      
  
     # Add MSBuild to the PATH: https://github.com/microsoft/setup-msbuild     
     - name: Add msbuild to PATH
