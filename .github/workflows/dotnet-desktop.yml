@@ -54,4 +54,4 @@ jobs:
     # Run the solution, replacing RxDemoApp with the name of your solution 
     - name: Run the Test Suite
       shell: powershell
-      run: $RANOREX_HOME\GovPilot.exe
+      run: $RANOREX_HOME\GovPilot
