@@ -17,12 +17,14 @@ jobs:
     # Configure environment variables 
     env: 
       Solution_Name: GovPilot.sln # Replace with your solution name 
-      Test_Project_Path: GovPilot\GovPilot.csproj # Replace with the path to your test project 
+      Test_Project_Path: TestCI\GovPilot\GovPilot.csproj # Replace with the path to your test project 
        
     # Check out code from the repository 
     steps: 
     - name: Checkout 
       uses: actions/checkout@v2 # At the time of writing, v4 is the latest 
+      with: 
+        fetch-depth: 0 
       
  
     # Add MSBuild to the PATH: https://github.com/microsoft/setup-msbuild     
