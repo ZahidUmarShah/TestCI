@@ -46,7 +46,12 @@ jobs:
     - name: Build solution 
       run: msbuild GovPilot\GovPilot.csproj -t:rebuild -verbosity:diag -property:Configuration=Debug
 
+    - name: Debug output
+      run: |
+        # Print environment variables and check directory contents
+        echo "RANOREX_HOME is $env:RANOREX_HOME"
+
     # Run the solution, replacing RxDemoApp with the name of your solution 
-    - name: Run the Test Suite 
-      shell: cmd
-      run: $RANOREX_HOME/GovPilot.exe
+    - name: Run the Test Suite
+      shell: powershell
+      run: $RANOREX_HOME/GovPilot.exe"
