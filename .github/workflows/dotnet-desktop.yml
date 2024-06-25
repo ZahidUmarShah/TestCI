@@ -27,7 +27,7 @@ jobs:
        vswhere-path: 'C:/Program Files (x86)/Microsoft Visual Studio/Installer'
  
     - name: Run Ranorex Tests
-      run: msbuild MyTest12.sln
+      run: msbuild GovPilot.sln
  
     - name: Run the solution
       run: GovPilot/bin/Debug/GovPilot.exe
