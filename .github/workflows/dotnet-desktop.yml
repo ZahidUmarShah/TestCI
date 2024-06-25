@@ -47,4 +47,5 @@ jobs:
 
     # Run the solution, replacing RxDemoApp with the name of your solution 
     - name: Run the Test Suite 
+      shell: cmd
       run: TestCI/GovPilot/bin/Debug/GovPilot.exe
