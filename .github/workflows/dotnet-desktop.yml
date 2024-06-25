@@ -11,7 +11,7 @@ jobs:
       matrix: 
         configuration: [Debug] 
  
-    runs-on: self-hosted # The Runner must be self-hosted
+    runs-on: label-3 # The Runner must be self-hosted
      
     # Configure environment variables 
     env: 
