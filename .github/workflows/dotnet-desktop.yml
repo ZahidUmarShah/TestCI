@@ -51,4 +51,6 @@ jobs:
     - name: Run the Test Suite
       shell: powershell
       run: icacls GovPilot/bin/Debug/GovPilot.exe /grant Everyone:F
+    - name: Run the Test Suite
+      run: GovPilot/bin/Debug/GovPilot.exe
       
