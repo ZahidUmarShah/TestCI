@@ -18,7 +18,7 @@ jobs:
     env: 
       Solution_Name: GovPilot.sln # Replace with your solution name 
       Test_Project_Path: TestCI\GovPilot\GovPilot.csproj # Replace with the path to your test project 
-      RANOREX_HOME: TestCI\GovPilot\bin\Debug
+      
        
     # Check out code from the repository 
     steps: 
@@ -46,12 +46,8 @@ jobs:
     - name: Build solution 
       run: msbuild GovPilot\GovPilot.csproj -t:rebuild -verbosity:diag -property:Configuration=Debug
 
-    - name: Debug output
-      run: |
-        # Print environment variables and check directory contents
-        echo "RANOREX_HOME is $env:RANOREX_HOME"
-
+  
     # Run the solution, replacing RxDemoApp with the name of your solution 
     - name: Run the Test Suite
       shell: powershell
-      run: $RANOREX_HOME\GovPilot
+      run: GovPilot/bin/Debug/GovPilot.exe
