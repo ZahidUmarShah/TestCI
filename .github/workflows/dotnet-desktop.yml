@@ -1,3 +1,4 @@
+name: TestCICD
 on:
   push:
     branches: [ "main" ]
