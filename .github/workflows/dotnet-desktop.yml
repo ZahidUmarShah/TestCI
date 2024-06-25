@@ -7,7 +7,7 @@ jobs:
   build:
  
     env:
-      BUILD_CONFIG: 'Release'
+      BUILD_CONFIG: 'Debug'
       SOLUTION: 'GovPilot.sln'
  
     runs-on: label-1
