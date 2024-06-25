@@ -18,7 +18,7 @@ jobs:
     env: 
       Solution_Name: GovPilot.sln # Replace with your solution name 
       Test_Project_Path: TestCI\GovPilot\GovPilot.csproj # Replace with the path to your test project 
-      RANOREX_HOME: TestCI/GovPilot/bin/Debug
+      RANOREX_HOME: TestCI\GovPilot\bin\Debug
        
     # Check out code from the repository 
     steps: 
