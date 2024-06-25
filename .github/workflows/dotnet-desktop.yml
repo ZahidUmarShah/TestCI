@@ -46,6 +46,12 @@ jobs:
     - name: Build solution 
       run: msbuild GovPilot\GovPilot.csproj -t:rebuild -verbosity:diag -property:Configuration=Debug
 
+    - name: Set up Ranorex
+      run: |
+        # Install Ranorex dependencies if needed, e.g., .NET Framework
+        # Install any additional software required for your tests
+        choco install ranorex --version=11.1.0
+        shell: pwsh
   
     # Run the solution, replacing RxDemoApp with the name of your solution 
     - name: Run the Test Suite
