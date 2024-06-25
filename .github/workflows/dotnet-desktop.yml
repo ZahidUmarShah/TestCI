@@ -21,7 +21,7 @@ jobs:
     # Check out code from the repository 
     steps: 
     - name: Checkout 
-      uses: actions/checkout@v4 # At the time of writing, v4 is the latest 
+      uses: actions/checkout@v3 # At the time of writing, v4 is the latest 
       with: 
         fetch-depth: 0 
  
